@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/main_activity_et_max_weight"
+        android:layout_width="123dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:hint="@string/max_weight_set_hint"
+        android:inputType="number"
+        android:textColorHint="#3949AB"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/main_activity_et_rep_max"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <EditText
+        android:id="@+id/main_activity_et_rep_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:hint="@string/max_reps_et"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#3949AB"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_activity_et_max_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_activity_et_max_weight"
+        app:layout_constraintTop_toTopOf="@+id/main_activity_et_max_weight" />
+
+    <TextView
+        android:id="@+id/main_activity_tv_1repMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:text="@string/ORM_tv"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <SeekBar
+        android:id="@+id/main_activty_adjuster_sb"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="327dp"
+        android:layout_height="61dp"
+        android:max="20"
+        android:progress="3"
+        android:thumbTint="@color/design_default_color_primary_dark"
+        app:layout_constraintBottom_toTopOf="@+id/main_activity_eq_amt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_tv_1repMax"
+        app:layout_constraintVertical_bias="0.24000001" />
+
+    <TextView
+        android:id="@+id/main_activity_eq_amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:text="@string/eq_amt_placeholder"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/main_activity_et_bodywt"
+        app:layout_constraintEnd_toEndOf="@+id/main_activty_adjuster_sb"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/main_activty_adjuster_sb"
+        app:layout_constraintTop_toBottomOf="@+id/main_activty_adjuster_sb"
+        app:layout_constraintVertical_bias="0.32999998" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/main_activity_sw_squat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:minHeight="48dp"
+        android:text="@string/Switch_label_1"
+        android:textColor="@color/design_default_color_primary_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_et_bodywt" />
+
+    <EditText
+        android:id="@+id/main_activity_et_bodywt"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:hint="@string/bodyweight_hint"
+        android:inputType="number"
+        android:textColorHint="#3949AB"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/main_activity_sw_squat"
+        app:layout_constraintEnd_toEndOf="@+id/main_activity_eq_amt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/main_activity_eq_amt"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_eq_amt"
+        app:layout_constraintVertical_bias="0.42000002" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/main_activity_bench_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:minHeight="48dp"
+        android:text="@string/bench_switch_text"
+        android:textColor="@color/design_default_color_primary_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_sw_squat" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/main_activity_dl_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:minHeight="48dp"
+        android:text="@string/deadlift_switch_text"
+        android:textColor="@color/design_default_color_primary_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_bench_switch" />
+
+    <Button
+        android:id="@+id/main_activity_bt_submit_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:text="@string/button_rl_words"
+        app:layout_constraintBottom_toTopOf="@+id/main_activity_1mx_bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_dl_switch"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/main_activity_tv_squat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:text="@string/tv_for_rlt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_activity_sw_squat"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_et_bodywt" />
+
+    <TextView
+        android:id="@+id/main_activity_tv_bench"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:text="@string/tv_for_rlt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_activity_bench_switch"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_tv_squat" />
+
+    <TextView
+        android:id="@+id/main_activity_tv_DL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/ibm_plex_mono_medium"
+        android:text="@string/tv_for_rlt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_activity_dl_switch"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_tv_bench" />
+
+    <Button
+        android:id="@+id/main_activity_1mx_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/oneRepMaxButtonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/main_activity_bt_submit_rl"
+        app:layout_constraintStart_toStartOf="@+id/main_activity_bt_submit_rl"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_bt_submit_rl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

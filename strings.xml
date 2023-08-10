@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Weight Smith</string>
+    <string name="max_weight_set_hint">Weight (lbs)</string>
+    <string name="max_reps_et">Max Reps</string>
+    <string name="ORM_tv">1 Rep Max: 000</string>
+    <string name="eqRep_description">Reps:</string>
+    <string name="rep_placeholder" />
+    <string name="eq_amt_placeholder">Wt: 000 Reps: 00</string>
+    <string name="bodyweight_hint">Bodyweight (lbs)</string>
+    <string name="Switch_label_1">Squat</string>
+    <string name="button_rl_words">Calculate Relative Strength Tier</string>
+    <string name="bench_switch_text">Bench</string>
+    <string name="deadlift_switch_text">Dlift</string>
+    <string name="oneRepMaxButtonText">Calculate One Rep Max</string>
+    <string name="tv_for_rlt">Relative Strength Tier</string>
+</resources>
