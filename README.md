@@ -1,3 +1,3 @@
 # WeightSmith-Androidapp
-One Rep Max / Relative Strength Tier Calculator
+#One Rep Max / Relative Strength Tier Calculator
 ![](images/weightSmith.png)
